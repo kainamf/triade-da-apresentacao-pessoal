@@ -2,7 +2,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
 import CommitmentSection from './components/CommitmentSection';
-import EmpateaPromo from './components/EmpateaPromo';
+import TriadeSpecialists from './components/EmpateaPromo';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FreeMaterialsSection from './components/FreeMaterialsSection';
@@ -15,7 +15,7 @@ function App() {
             <Services />
             <About />
             <CommitmentSection />
-            <EmpateaPromo />
+            <TriadeSpecialists />
             <FreeMaterialsSection />
             <Contact />
             <Footer />

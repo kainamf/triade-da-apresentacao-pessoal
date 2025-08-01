@@ -18,14 +18,14 @@ function FreeMaterialsSection() {
             <div className="container mx-auto px-4 flex flex-col items-center gap-8 relative z-10">
                 {/* Título centralizado acima */}
                 <h2 className="text-3xl md:text-4xl font-bold text-neutral-700 mb-2 flex items-center justify-center gap-2 w-full text-center">
-                    Materiais Gratuitos <span role="img" aria-label="livro">📚</span>
+                    Conteúdo Educativo <span role="img" aria-label="livro">📚</span>
                 </h2>
                 <div className="w-full flex flex-col lg:flex-row items-stretch justify-center gap-10 lg:gap-0">
                     {/* Imagem à esquerda, alinhada à linha central */}
                     <div className="flex-1 flex justify-end items-center mb-8 lg:mb-0 pr-0 lg:pr-6">
                         <img
-                            src="/assets/images/cursos-online-gratuitos.jpg"
-                            alt="Cursos online gratuitos"
+                            src="/assets/images/quemSomosText.png"
+                            alt="Conteúdo educativo da Tríade"
                             className="object-cover rounded-2xl shadow-2xl border-4 border-secondary-700 bg-white"
                             style={imgHeight ? { height: imgHeight, maxHeight: 420 } : { maxWidth: 308, maxHeight: 308 }}
                         />
@@ -33,22 +33,22 @@ function FreeMaterialsSection() {
                     {/* Texto à direita, alinhado à linha central */}
                     <div ref={textBlockRef} className="flex-1 flex flex-col justify-center items-start text-left gap-6 pl-0 lg:pl-6">
                         <p className="text-xl text-accent mb-4 font-semibold font-default text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Aqui você encontra materiais de apoio, guias e recursos gratuitos para famílias, profissionais e todos que desejam promover inclusão, autonomia e conhecimento sobre neurodesenvolvimento.
+                            Aqui você encontra materiais educativos, guias práticos e conteúdo de valor sobre apresentação pessoal, etiqueta corporativa e desenvolvimento profissional.
                         </p>
                         <p className="text-lg text-accent mb-0 font-default text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Os conteúdos são preparados com carinho e responsabilidade, para apoiar sua prática, estudos ou rotina familiar. Sinta-se à vontade para baixar, compartilhar e multiplicar informação de qualidade!
+                            Nossos conteúdos são preparados pelas especialistas da Tríade com foco em autenticidade, elegância e competência profissional. Materiais práticos para seu desenvolvimento pessoal e corporativo!
                         </p>
                     </div>
                 </div>
                 {/* Botão centralizado abaixo */}
                 <div className="w-full flex justify-center mt-6">
                     <a
-                        href="https://drive.google.com/drive/folders/1skFGEx_Q51wM-ZKoo-0GUzCCMRgPpU9e?usp=sharing"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block px-8 py-3 bg-secondary-700 text-neutral-700 font-bold rounded-full shadow-lg hover:bg-accent-700 hover:text-white transition-all text-lg animate-bounce-slow"
                     >
-                        Acessar Materiais
+                        Acessar Conteúdos
                     </a>
                 </div>
             </div>

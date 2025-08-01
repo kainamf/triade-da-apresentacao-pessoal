@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import { WHATSAPP_LINK, CRP } from '../constants';
+import { WHATSAPP_LINK } from '../constants';
 
 function Hero() {
     return (
@@ -9,17 +9,17 @@ function Hero() {
                     {/* Coluna da Esquerda: Logo centralizada acima do texto */}
                     <div className="flex flex-col items-center text-center">
                         <img 
-                            src="/assets/images/laraLogo.png" 
-                            alt="Logo Lara Frasson" 
+                            src="/assets/images/logo.png" 
+                            alt="Logo Tríade da Apresentação Pessoal" 
                             className="w-48 md:w-72 mx-auto"
                         />
 
                         <h1 className="text-2xl md:text-3xl font-bold text-neutral-500 mb-2 leading-tight text-center">
-                            Psicóloga Lara Frasson CRP {CRP} | Atendimento clínico com foco em autismo, neurodesenvolvimento e empatia
+                            Tríade da Apresentação Pessoal | Etiqueta, Imagem e Comportamento
                         </h1>
                         <div className="mt-4 mb-6">
                             <blockquote className="text-lg md:text-xl italic text-stone-700 font-medium">
-                                Mais do que ensinar a se comportar, eu ensino a se reconhecer. E ser acolhido por inteiro.
+                                Valorizamos e fortalecemos a apresentação pessoal como ferramenta estratégica de qualificação profissional.
                             </blockquote>
                         </div>
                         <div className="mt-6">
@@ -29,7 +29,7 @@ function Hero() {
                                 rel="noopener noreferrer"
                                 className="bg-secondary-500 hover:bg-secondary-700 text-background px-8 py-3 rounded-full font-semibold flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto animate-bounce-slow"
                             >
-                                Agendar Consulta
+                                Entre em Contato
                                 <ArrowRight size={20} />
                             </a>
                             <style>{`
@@ -44,13 +44,13 @@ function Hero() {
                         </div>
                     </div>
 
-                    {/* Coluna da Direita: Imagem de Perfil */}
+                    {/* Coluna da Direita: Imagem dos membros */}
                     <div className="flex justify-center items-center">
                         <div className="max-w-md w-full">
                            <img
-                                src="/assets/images/laraProfile.jpeg"
-                                alt="Foto de Lara Frasson"
-                                className="w-full h-auto object-cover rounded-t-[200px] shadow-2xl"
+                                src="/assets/images/membros.png"
+                                alt="Membros da Tríade da Apresentação Pessoal"
+                                className="w-full h-auto object-cover rounded-2xl shadow-2xl"
                            />
                         </div>
                     </div>

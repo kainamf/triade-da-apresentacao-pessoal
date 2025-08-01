@@ -1,6 +1,6 @@
-import { Award, Book, BadgeCheck, HeartHandshake, Target, Lightbulb, Gem } from 'lucide-react';
+import { Award, Book, BadgeCheck, HeartHandshake, Target, Lightbulb, Gem, Users } from 'lucide-react';
 import InstagramEmbed from './InstagramEmbed';
-import CommitmentSection from './CommitmentSection';
+import { BRUNA_INFO, RAQUEL_INFO, LEANDRA_INFO } from '../constants';
 
 function About() {
     return (
@@ -8,79 +8,70 @@ function About() {
             <section id="sobre" className="py-16 bg-secondary-300 relative">
                 <div className="container mx-auto px-4 sm:px-6">
                     {/* Título centralizado no topo */}
-                    <h2 className="text-3xl md:text-4xl font-bold text-neutral-700 mb-12 text-center w-full">Quem é a psicóloga Lara Frasson?</h2>
-                    {/* Grid principal: texto à esquerda, Instagram à direita */}
+                    <h2 className="text-3xl md:text-4xl font-bold text-neutral-700 mb-12 text-center w-full">Quem Somos</h2>
+                    
+                    {/* Grid principal: texto à esquerda, imagem à direita */}
                     <div className="grid md:grid-cols-[70%_30%] gap-12 items-start mb-12 h-full">
                         {/* Coluna da esquerda: texto + cards */}
                         <div className="flex flex-col gap-8 h-full">
                             <div>
                                 <div className="space-y-2 text-accent leading-relaxed text-base md:text-lg mb-2 text-justify" style={{ wordSpacing: '-0.1em' }}>
                                     <p>
-                                        Sou psicóloga, autista, especialista em neurodesenvolvimento e apaixonada por escutar o que muitas vezes o mundo insiste em silenciar.
+                                        Somos um projeto colaborativo que une três especialistas com um propósito em comum: valorizar e fortalecer a apresentação pessoal como ferramenta estratégica de qualificação profissional.
                                     </p>
                                     <p>
-                                        Atendo crianças, adolescentes e mulheres autistas com base na Análise do Comportamento Aplicada (ABA) com um olhar ético, empático e centrado na vivência de quem está do outro lado. Busco proporcionar uma escuta verdadeira e planejamento individualizado, o objetivo não é corrigir ninguém, e sim construir caminhos de autonomia, segurança e pertencimento.
+                                        Formamos a Tríade da Apresentação Pessoal, composta por uma consultora de etiqueta, uma consultora de imagem e uma consultora de RH. Juntas, reunimos expertises complementares que proporcionam uma abordagem completa e integrada sobre como nos apresentamos ao mundo – seja no comportamento, na imagem ou na postura profissional.
                                     </p>
                                     <p>
-                                        Além do atendimento clínico, desenvolvo projetos, supervisões e formações que unem ciência, sensibilidade e compromisso com a inclusão de verdade.
+                                        Acreditamos que a forma como nos comunicamos, nos vestimos e nos comportamos impacta diretamente nossas oportunidades e trajetórias no mercado de trabalho. Por isso, nosso projeto é voltado a pessoas que desejam se destacar com autenticidade, elegância e competência.
+                                    </p>
+                                    <p>
+                                        Nosso objetivo é oferecer conteúdo de valor, treinamentos e vivências práticas que contribuam para o desenvolvimento de uma imagem pessoal coerente, confiante e profissional.
                                     </p>
                                 </div>
                             </div>
-                            {/* Cards em grid 2x2 */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                {/* Formação e Especializações */}
+
+                            {/* Cards das três consultoras em grid 3x1 */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {/* Bruna - Consultora de RH */}
                                 <div className="bg-secondary-700 p-6 rounded-2xl shadow-md">
-                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center"><Award className="text-primary" size={20} /> Formações</h3>
-                                    <ul className="list-disc ml-5 text-accent text-sm text-justify">
-                                        <li>Psicóloga formada pela Universidade Positivo</li>
-                                        <li>Pós-graduada em:
-                                            <ul className="list-disc ml-5 text-sm">
-                                                <li>Análise do Comportamento Aplicada (ABA)</li>
-                                                <li>Clínica analítico-comportamental infantil</li>
-                                                <li>Neuropsicologia</li>
-                                                <li>Autismo</li>
-                                                <li>Habilidades terapêuticas na clínica ABA</li>
-                                            </ul>
-                                        </li>
-                                        <li>Mestranda em Ciências Sociais Aplicadas (UEPG)</li>
-                                        <li>Pesquisa sobre ensino de habilidades sociais a meninas autistas por meio de realidade virtual, com foco na prevenção de relacionamentos abusivos.</li>
-                                    </ul>
+                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center">
+                                        <Award className="text-primary" size={20} /> {BRUNA_INFO.name}
+                                    </h3>
+                                    <p className="text-accent text-sm text-center font-medium mb-2">{BRUNA_INFO.role}</p>
+                                    <p className="text-accent text-xs text-justify mb-3">{BRUNA_INFO.specialty}</p>
+                                    <p className="text-accent text-xs text-justify italic">"{BRUNA_INFO.description}"</p>
                                 </div>
-                                {/* Posições e Projetos */}
+
+                                {/* Raquel - Consultora de Imagem */}
                                 <div className="bg-secondary-700 p-6 rounded-2xl shadow-md">
-                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center"><Award className="text-primary" size={20} /> Posições e Projetos</h3>
-                                    <ul className="list-disc ml-5 text-accent text-sm text-justify">
-                                        <li>Supervisora da Comissão de Desenvolvimento Atípico da ABPMC</li>
-                                        <li>Diretora de projetos, inovação e sustentabilidade do Instituto TEAproxima, iniciativa que promove inclusão real para pessoas autistas na sociedade</li>
-                                        <li>Criadora do curso EmpaTEA – a primeira formação do Brasil em ABA com olhar autista, ética compassiva e foco no atendimento empático</li>
-                                    </ul>
+                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center">
+                                        <Users className="text-primary" size={20} /> {RAQUEL_INFO.name}
+                                    </h3>
+                                    <p className="text-accent text-sm text-center font-medium mb-2">{RAQUEL_INFO.role}</p>
+                                    <p className="text-accent text-xs text-justify mb-3">{RAQUEL_INFO.specialty}</p>
+                                    <p className="text-accent text-xs text-justify italic">"{RAQUEL_INFO.description}"</p>
                                 </div>
-                                {/* Certificações */}
+
+                                {/* Leandra - Consultora de Etiqueta */}
                                 <div className="bg-secondary-700 p-6 rounded-2xl shadow-md">
-                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center"><BadgeCheck className="text-primary" size={20} /> Certificações</h3>
-                                    <ul className="list-disc ml-5 text-accent text-sm text-justify">
-                                        <li>Supervisora ABA certificada QASP-S (internacional)</li>
-                                        <li>Coordenadora ABA certificada CABA-BR</li>
-                                        <li>Educadora parental pela Positive Discipline Association</li>
-                                    </ul>
-                                </div>
-                                {/* Obras Publicadas */}
-                                <div className="bg-secondary-700 p-6 rounded-2xl shadow-md">
-                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center"><Book className="text-primary" size={20} /> Obras Publicadas</h3>
-                                    <ul className="list-disc ml-5 text-accent text-sm text-justify">
-                                        <li>Criadora do jogo terapêutico Cabeça Dura (Terapia Criativa)</li>
-                                        <li>Coautora do livro Rick (Editora Lado A) – sobre habilidades sociais para crianças</li>
-                                        <li>Coordenadora do livro Olívia – um livro infantil sobre autismo e empatia, protagonizado por uma coruja autista (lançamento em novembro)</li>
-                                    </ul>
+                                    <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center">
+                                        <HeartHandshake className="text-primary" size={20} /> {LEANDRA_INFO.name}
+                                    </h3>
+                                    <p className="text-accent text-sm text-center font-medium mb-2">{LEANDRA_INFO.role}</p>
+                                    <p className="text-accent text-xs text-justify mb-3">{LEANDRA_INFO.specialty}</p>
+                                    <p className="text-accent text-xs text-justify italic">"{LEANDRA_INFO.description}"</p>
                                 </div>
                             </div>
                         </div>
-                        {/* Coluna da direita: Instagram */}
+
+                        {/* Coluna da direita: Imagem dos membros */}
                         <div className="flex justify-center items-start w-full overflow-x-hidden">
                             <div className="w-full max-w-[300px] sm:max-w-[360px] md:max-w-[420px]">
-                                <InstagramEmbed
-                                    url="https://www.instagram.com/p/DIcmvfHM3-i/"
-                                    className="rounded-2xl shadow-xl bg-secondary-900"
+                                <img
+                                    src="/assets/images/quemSomos.png"
+                                    alt="Quem Somos - Tríade da Apresentação Pessoal"
+                                    className="w-full h-auto object-cover rounded-2xl shadow-xl"
                                 />
                             </div>
                         </div>
@@ -90,4 +81,5 @@ function About() {
         </>
     );
 }
+
 export default About;
