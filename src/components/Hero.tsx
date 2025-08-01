@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'react-feather';
 import { WHATSAPP_LINK } from '../constants';
 
 function Hero() {

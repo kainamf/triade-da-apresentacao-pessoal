@@ -1,4 +1,4 @@
-import { Award, Book, BadgeCheck, HeartHandshake, Target, Lightbulb, Gem, Users } from 'lucide-react';
+import { Award, Users, Heart } from 'react-feather';
 import InstagramEmbed from './InstagramEmbed';
 import { BRUNA_INFO, RAQUEL_INFO, LEANDRA_INFO } from '../constants';
 
@@ -56,7 +56,7 @@ function About() {
                                 {/* Leandra - Consultora de Etiqueta */}
                                 <div className="bg-secondary-700 p-6 rounded-2xl shadow-md">
                                     <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2 text-center justify-center">
-                                        <HeartHandshake className="text-primary" size={20} /> {LEANDRA_INFO.name}
+                                        <Heart className="text-primary" size={20} /> {LEANDRA_INFO.name}
                                     </h3>
                                     <p className="text-accent text-sm text-center font-medium mb-2">{LEANDRA_INFO.role}</p>
                                     <p className="text-accent text-xs text-justify mb-3">{LEANDRA_INFO.specialty}</p>

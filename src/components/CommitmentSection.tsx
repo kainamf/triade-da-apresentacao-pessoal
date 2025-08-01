@@ -1,4 +1,4 @@
-import { Target, Eye, Gem } from 'lucide-react';
+import { Target, Eye, Star } from 'react-feather';
 
 function CommitmentSection() {
     return (
@@ -51,7 +51,7 @@ function CommitmentSection() {
                             />
                         </div>
                         <h3 className="text-2xl font-semibold text-accent mb-4 flex items-center gap-2 text-center justify-center">
-                            <Gem className="text-primary" size={28} /> Valores
+                            <Star className="text-primary" size={28} /> Valores
                         </h3>
                         <div className="text-accent text-base text-justify leading-relaxed space-y-3">
                             <p>Agir com <strong>RESPONSABILIDADE</strong> e <strong>TRANSPARÊNCIA</strong>, mantendo uma postura alinhada ao ambiente corporativo.</p>
