@@ -1,8 +1,12 @@
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
-import CommitmentSection from './components/CommitmentSection';
-import TriadeSpecialists from './components/EmpateaPromo';
+import Mission from './components/Mission';
+import Vision from './components/Vision';
+import Values from './components/Values';
+import BrunaSpecialist from './components/BrunaSpecialist';
+import RaquelSpecialist from './components/RaquelSpecialist';
+import LeandraSpecialist from './components/LeandraSpecialist';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FreeMaterialsSection from './components/FreeMaterialsSection';
@@ -14,8 +18,12 @@ function App() {
             <Hero />
             <Services />
             <About />
-            <CommitmentSection />
-            <TriadeSpecialists />
+            <Mission />
+            <Vision />
+            <Values />
+            <BrunaSpecialist />
+            <RaquelSpecialist />
+            <LeandraSpecialist />
             <FreeMaterialsSection />
             <Contact />
             <Footer />

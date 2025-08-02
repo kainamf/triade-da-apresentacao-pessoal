@@ -2,73 +2,92 @@ import { Users, Briefcase, Heart, Zap, Target, Award } from 'react-feather';
 
 function Services() {
     return (
-        <section id="services" className="py-16 bg-primary-300 relative">
-            <div className="container mx-auto px-4 overflow-x-hidden">
+        <section id="services" className="py-20 bg-secondary-300">
+            <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-neutral-700 mb-6">Nossos Serviços</h2>
-                    <p className="text-xl text-accent max-w-3xl mx-auto">
-                        Conheça como podemos ajudar você a desenvolver uma apresentação pessoal estratégica e autêntica através da nossa abordagem integrada.
+                    <h2 className="text-4xl font-bold text-neutral-900 mb-4">Nossos Serviços</h2>
+                    <div className="w-20 h-1 bg-primary-500 mx-auto mb-6"></div>
+                    <p className="text-xl text-neutral-700 max-w-4xl mx-auto">
+                        Oferecemos uma abordagem integrada e estratégica para o desenvolvimento da sua apresentação pessoal e competências profissionais.
                     </p>
                 </div>
-                <div className="grid md:grid-cols-3 md:grid-rows-2 gap-8">
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* 1 - Consultoria de Etiqueta */}
-                    <div className="bg-primary-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 flex flex-col items-center text-center">
-                        <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                            <Heart className="text-white" size={28} />
+                    <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
+                        <div className="flex items-center mb-6">
+                            <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
+                                <Heart className="text-primary-700" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900">Consultoria de Etiqueta</h3>
                         </div>
-                        <h3 className="text-2xl font-semibold text-accent mb-2 text-center">Consultoria de Etiqueta</h3>
-                        <p className="text-accent leading-relaxed text-base text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Orientação sobre protocolos sociais e corporativos, etiqueta à mesa e comportamento adequado para diferentes contextos sociais e profissionais.
+                        <p className="text-neutral-700 leading-relaxed">
+                            Orientação sobre protocolos sociais e corporativos, etiqueta à mesa e comportamento adequado para diferentes contextos profissionais.
                         </p>
                     </div>
+
                     {/* 2 - Consultoria de Imagem */}
-                    <div className="bg-primary-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 flex flex-col items-center text-center">
-                        <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                            <Users className="text-white" size={28} />
+                    <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
+                        <div className="flex items-center mb-6">
+                            <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
+                                <Users className="text-primary-700" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900">Consultoria de Imagem</h3>
                         </div>
-                        <h3 className="text-2xl font-semibold text-accent mb-2 text-center">Consultoria de Imagem</h3>
-                        <p className="text-accent leading-relaxed text-base text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Personal styling, análise de coloração pessoal, consultoria de guarda-roupa e orientação para criar uma imagem corporativa estratégica e autêntica.
+                        <p className="text-neutral-700 leading-relaxed">
+                            Personal styling, análise de coloração pessoal, consultoria de guarda-roupa e orientação para uma imagem corporativa estratégica.
                         </p>
                     </div>
+
                     {/* 3 - Consultoria de RH */}
-                    <div className="bg-primary-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 flex flex-col items-center text-center">
-                        <div className="bg-accent w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                            <Briefcase className="text-white" size={28} />
+                    <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
+                        <div className="flex items-center mb-6">
+                            <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
+                                <Briefcase className="text-primary-700" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900">Consultoria de RH</h3>
                         </div>
-                        <h3 className="text-2xl font-semibold text-accent mb-2 text-center">Consultoria de RH</h3>
-                        <p className="text-accent leading-relaxed text-base text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Orientação sobre comunicação profissional, postura corporativa e desenvolvimento de competências comportamentais para o mercado de trabalho.
+                        <p className="text-neutral-700 leading-relaxed">
+                            Orientação sobre comunicação profissional, postura corporativa e desenvolvimento de competências comportamentais.
                         </p>
                     </div>
+
                     {/* 4 - Treinamentos Corporativos */}
-                    <div className="bg-primary-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 flex flex-col items-center text-center">
-                        <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                            <Target className="text-white" size={28} />
+                    <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
+                        <div className="flex items-center mb-6">
+                            <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
+                                <Target className="text-primary-700" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900">Treinamentos Corporativos</h3>
                         </div>
-                        <h3 className="text-2xl font-semibold text-accent mb-2 text-center">Treinamentos Corporativos</h3>
-                        <p className="text-accent leading-relaxed text-base text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Workshops e treinamentos in-company sobre apresentação pessoal, etiqueta empresarial e desenvolvimento de uma imagem corporativa coesa.
+                        <p className="text-neutral-700 leading-relaxed">
+                            Workshops e treinamentos in-company sobre apresentação pessoal, etiqueta empresarial e desenvolvimento de imagem corporativa.
                         </p>
                     </div>
+
                     {/* 5 - Palestras e Vivências */}
-                    <div className="bg-primary-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 flex flex-col items-center text-center">
-                        <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                            <Zap className="text-white" size={28} />
+                    <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
+                        <div className="flex items-center mb-6">
+                            <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
+                                <Zap className="text-primary-700" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900">Palestras e Vivências</h3>
                         </div>
-                        <h3 className="text-2xl font-semibold text-accent mb-2 text-center">Palestras e Vivências</h3>
-                        <p className="text-accent leading-relaxed text-base text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Eventos educativos e experiências práticas que abordam os pilares da apresentação pessoal de forma integrada e didática.
+                        <p className="text-neutral-700 leading-relaxed">
+                            Eventos educativos e experiências práticas que abordam os pilares da apresentação pessoal de forma integrada.
                         </p>
                     </div>
+
                     {/* 6 - Conteúdo Educativo */}
-                    <div className="bg-primary-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 flex flex-col items-center text-center">
-                        <div className="bg-accent w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                            <Award className="text-white" size={28} />
+                    <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
+                        <div className="flex items-center mb-6">
+                            <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
+                                <Award className="text-primary-700" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900">Conteúdo Educativo</h3>
                         </div>
-                        <h3 className="text-2xl font-semibold text-accent mb-2 text-center">Conteúdo Educativo</h3>
-                        <p className="text-accent leading-relaxed text-base text-justify text-center" style={{ wordSpacing: '-0.1em' }}>
-                            Materiais educativos, guias práticos e conteúdo digital para desenvolvimento contínuo da apresentação pessoal e competências profissionais.
+                        <p className="text-neutral-700 leading-relaxed">
+                            Materiais educativos, guias práticos e conteúdo digital para desenvolvimento contínuo da apresentação pessoal.
                         </p>
                     </div>
                 </div>
