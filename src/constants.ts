@@ -3,7 +3,7 @@ export const PHONE = '';
 export const EMAIL = '';
 export const ADDRESS = '';
 export const WHATSAPP_LINK = '';
-export const INSTAGRAM_LINK = '';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/triadedaapresentacaopessoal';
 export const LINKEDIN_LINK = '';
 export const FACEBOOK_LINK = '';
 
