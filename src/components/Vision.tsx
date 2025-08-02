@@ -1,13 +1,10 @@
-import { Eye } from 'react-feather';
-
-function Vision() {
+export default function Vision() {
     return (
         <section id="visao" className="py-20 bg-secondary-300">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
                         <div className="flex items-center justify-center mb-6">
-                            <Eye className="text-primary-700 mr-4" size={32} />
                             <h2 className="text-4xl font-bold text-neutral-900">Nossa Visão</h2>
                         </div>
                         <div className="w-20 h-1 bg-primary-500 mx-auto"></div>
@@ -34,4 +31,3 @@ function Vision() {
     );
 }
 
-export default Vision;

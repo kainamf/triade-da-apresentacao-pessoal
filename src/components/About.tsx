@@ -1,4 +1,3 @@
-import { Award, Users, Heart } from 'react-feather';
 import { BRUNA_INFO, RAQUEL_INFO, LEANDRA_INFO } from '../constants';
 
 function About() {
@@ -37,7 +36,6 @@ function About() {
                             {/* Bruna */}
                             <div className="border-l-4 border-primary-500 pl-6">
                                 <div className="flex items-center mb-3">
-                                    <Award className="text-primary-700 mr-3" size={20} />
                                     <h4 className="text-xl font-bold text-neutral-900">{BRUNA_INFO.name}</h4>
                                 </div>
                                 <p className="text-primary-700 font-semibold mb-2">{BRUNA_INFO.role}</p>
@@ -48,7 +46,6 @@ function About() {
                             {/* Raquel */}
                             <div className="border-l-4 border-primary-500 pl-6">
                                 <div className="flex items-center mb-3">
-                                    <Users className="text-primary-700 mr-3" size={20} />
                                     <h4 className="text-xl font-bold text-neutral-900">{RAQUEL_INFO.name}</h4>
                                 </div>
                                 <p className="text-primary-700 font-semibold mb-2">{RAQUEL_INFO.role}</p>
@@ -59,7 +56,6 @@ function About() {
                             {/* Leandra */}
                             <div className="border-l-4 border-primary-500 pl-6">
                                 <div className="flex items-center mb-3">
-                                    <Heart className="text-primary-700 mr-3" size={20} />
                                     <h4 className="text-xl font-bold text-neutral-900">{LEANDRA_INFO.name}</h4>
                                 </div>
                                 <p className="text-primary-700 font-semibold mb-2">{LEANDRA_INFO.role}</p>
@@ -67,15 +63,6 @@ function About() {
                                 <p className="text-neutral-600 italic">"{LEANDRA_INFO.description}"</p>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Coluna da direita: imagem */}
-                    <div className="flex justify-center">
-                        <img
-                            src="/assets/images/quemSomos.png"
-                            alt="Quem Somos - Tríade da Apresentação Pessoal"
-                            className="w-full h-auto max-w-lg"
-                        />
                     </div>
                 </div>
             </div>

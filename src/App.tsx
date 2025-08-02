@@ -1,8 +1,6 @@
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
-import Mission from './components/Mission';
-import Vision from './components/Vision';
 import Values from './components/Values';
 import BrunaSpecialist from './components/BrunaSpecialist';
 import RaquelSpecialist from './components/RaquelSpecialist';
@@ -18,8 +16,6 @@ function App() {
             <Hero />
             <Services />
             <About />
-            <Mission />
-            <Vision />
             <Values />
             <BrunaSpecialist />
             <RaquelSpecialist />

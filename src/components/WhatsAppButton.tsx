@@ -1,4 +1,3 @@
-import { MessageCircle } from 'react-feather';
 import { WHATSAPP_LINK } from '../constants';
 
 

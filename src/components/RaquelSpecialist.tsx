@@ -1,4 +1,3 @@
-import { Users } from 'react-feather';
 import { RAQUEL_INFO } from '../constants';
 
 function RaquelSpecialist() {
@@ -8,7 +7,6 @@ function RaquelSpecialist() {
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center mb-6">
-                            <Users className="text-primary-700 mr-4" size={32} />
                             <h2 className="text-4xl font-bold text-neutral-900">Consultoria de Imagem</h2>
                         </div>
                         <div className="w-20 h-1 bg-primary-500 mx-auto"></div>

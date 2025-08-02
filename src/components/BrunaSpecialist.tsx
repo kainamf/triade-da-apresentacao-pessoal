@@ -1,4 +1,3 @@
-import { Briefcase } from 'react-feather';
 import { BRUNA_INFO } from '../constants';
 
 function BrunaSpecialist() {
@@ -8,7 +7,6 @@ function BrunaSpecialist() {
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center mb-6">
-                            <Briefcase className="text-primary-700 mr-4" size={32} />
                             <h2 className="text-4xl font-bold text-neutral-900">Consultoria de RH</h2>
                         </div>
                         <div className="w-20 h-1 bg-primary-500 mx-auto"></div>

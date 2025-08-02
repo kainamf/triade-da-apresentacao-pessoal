@@ -1,5 +1,3 @@
-import { Users, Briefcase, Heart, Zap, Target, Award } from 'react-feather';
-
 function Services() {
     return (
         <section id="services" className="py-20 bg-secondary-300">
@@ -17,7 +15,6 @@ function Services() {
                     <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
                         <div className="flex items-center mb-6">
                             <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
-                                <Heart className="text-primary-700" size={24} />
                             </div>
                             <h3 className="text-xl font-bold text-neutral-900">Consultoria de Etiqueta</h3>
                         </div>
@@ -30,7 +27,6 @@ function Services() {
                     <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
                         <div className="flex items-center mb-6">
                             <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
-                                <Users className="text-primary-700" size={24} />
                             </div>
                             <h3 className="text-xl font-bold text-neutral-900">Consultoria de Imagem</h3>
                         </div>
@@ -43,7 +39,6 @@ function Services() {
                     <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
                         <div className="flex items-center mb-6">
                             <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
-                                <Briefcase className="text-primary-700" size={24} />
                             </div>
                             <h3 className="text-xl font-bold text-neutral-900">Consultoria de RH</h3>
                         </div>
@@ -56,7 +51,6 @@ function Services() {
                     <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
                         <div className="flex items-center mb-6">
                             <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
-                                <Target className="text-primary-700" size={24} />
                             </div>
                             <h3 className="text-xl font-bold text-neutral-900">Treinamentos Corporativos</h3>
                         </div>
@@ -69,7 +63,6 @@ function Services() {
                     <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
                         <div className="flex items-center mb-6">
                             <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
-                                <Zap className="text-primary-700" size={24} />
                             </div>
                             <h3 className="text-xl font-bold text-neutral-900">Palestras e Vivências</h3>
                         </div>
@@ -82,7 +75,6 @@ function Services() {
                     <div className="bg-white p-8 border-l-4 border-primary-500 hover:border-primary-700 transition-all duration-300">
                         <div className="flex items-center mb-6">
                             <div className="w-12 h-12 bg-primary-100 flex items-center justify-center mr-4">
-                                <Award className="text-primary-700" size={24} />
                             </div>
                             <h3 className="text-xl font-bold text-neutral-900">Conteúdo Educativo</h3>
                         </div>
