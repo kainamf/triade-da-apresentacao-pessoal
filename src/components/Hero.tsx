@@ -10,8 +10,7 @@ function Hero() {
                         <img
                             src="/assets/images/membros.png"
                             alt="Membros da Tríade da Apresentação Pessoal"
-                            className="w-full h-auto max-w-4xl mx-auto mb-8"
-                            style={{ maxHeight: '500px', objectFit: 'contain' }}
+                            className="w-full h-[350px] max-w-4xl mx-auto mb-8 object-contain"
                         />
                     </div>
 
