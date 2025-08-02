@@ -1,6 +1,6 @@
 export default function Vision() {
     return (
-        <section id="visao" className="py-20 bg-secondary-300">
+        <section id="visao" className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">

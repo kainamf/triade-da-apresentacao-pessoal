@@ -2,7 +2,7 @@ import { BRUNA_INFO, RAQUEL_INFO, LEANDRA_INFO } from '../constants';
 
 function About() {
     return (
-        <section id="sobre" className="py-20 bg-white">
+        <section id="sobre" className="py-20 bg-background relative">
             <div className="container mx-auto px-4">
                 {/* Título */}
                 <div className="text-center mb-16">

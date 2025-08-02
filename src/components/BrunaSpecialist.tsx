@@ -2,12 +2,12 @@ import { BRUNA_INFO } from '../constants';
 
 function BrunaSpecialist() {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center mb-6">
-                            <h2 className="text-4xl font-bold text-neutral-900">Consultoria de RH</h2>
+                            <h2 className="text-4xl font-bold text-neutral-900">{BRUNA_INFO.name}</h2>
                         </div>
                         <div className="w-20 h-1 bg-primary-500 mx-auto"></div>
                     </div>
@@ -23,7 +23,6 @@ function BrunaSpecialist() {
                         
                         <div className="space-y-6">
                             <div className="border-l-4 border-primary-500 pl-6">
-                                <h3 className="text-2xl font-bold text-neutral-900 mb-2">{BRUNA_INFO.name}</h3>
                                 <p className="text-lg text-primary-700 font-semibold mb-2">{BRUNA_INFO.role}</p>
                                 <p className="text-neutral-700 font-medium mb-4">{BRUNA_INFO.specialty}</p>
                                 {BRUNA_INFO.company && (

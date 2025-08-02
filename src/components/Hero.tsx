@@ -2,7 +2,7 @@ import { WHATSAPP_LINK } from '../constants';
 
 function Hero() {
     return (
-        <section id="inicio" className="pt-16 pb-20 bg-secondary-100">
+        <section id="inicio" className="pt-16 pb-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="max-w-6xl mx-auto">
                     {/* Imagem da Tríade no Topo */}
