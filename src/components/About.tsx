@@ -20,24 +20,49 @@ export default function About() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-script text-font mb-12">
-            O evento
+            Sobre o Evento
           </h2>
 
           <div className="bg-background backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
             <p className="text-xl md:text-2xl text-font leading-relaxed mb-8">
-              Um evento presencial pra transformar o seu talento em um negócio sólido.
+              Uma experiência que vai além da estética. Um encontro que une saberes sobre 
+              imagem pessoal, etiqueta e comunicação autêntica.
             </p>
             
-            <div className="bg-secondary-300 rounded-2xl p-6 md:p-8">
-              <p className="text-lg md:text-xl text-font leading-relaxed">
-                A Tríade da Apresentação Pessoal vai aprimorar a sua essência criativa e te mostrar 
-                como unir marketing, atendimento e gestão para crescer de verdade.
-              </p>
+            <div className="bg-secondary-300 rounded-2xl p-6 md:p-8 mb-8">
+              <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <h3 className="text-lg font-semibold text-tertiary-700 mb-2">Reconexão</h3>
+                  <p className="text-font">Conecte-se com quem você realmente é</p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-tertiary-700 mb-2">Presença</h3>
+                  <p className="text-font">Desenvolva sua comunicação autêntica</p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-tertiary-700 mb-2">Propósito</h3>
+                  <p className="text-font">Fortaleça seus caminhos pessoais e profissionais</p>
+                </div>
+              </div>
             </div>
 
-            <button className="mt-8 bg-tertiary-300 text-secondary-100 px-8 py-3 rounded-full text-lg font-semibold hover:bg-tertiary-500 transform hover:scale-105 transition-all duration-300 shadow-lg border-b-4 border-tertiary-700">
-              Comprar Agora
-            </button>
+            <div className="text-left space-y-4">
+              <h3 className="text-xl font-semibold text-tertiary-700 mb-4">O que você vai aprender:</h3>
+              <ul className="space-y-3 text-lg text-font">
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-tertiary-500 rounded-full"></div>
+                  Apresentação pessoal com propósito
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-tertiary-500 rounded-full"></div>
+                  A força da comunicação não verbal
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-tertiary-500 rounded-full"></div>
+                  Etiqueta como ferramenta de presença e respeito
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

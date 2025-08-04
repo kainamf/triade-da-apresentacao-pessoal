@@ -1,15 +1,16 @@
 import React from 'react';
-import { Check, Star, Gift } from 'lucide-react';
+import { Check, Star, Gift, Users, Clock, MapPin } from 'lucide-react';
 
 export default function Registration() {
   const benefits = [
-    "2 dias de conteúdo exclusivo",
-    "Networking com profissionais do mercado",
-    "Oficinas práticas e hands-on",
-    "Material didático completo",
-    "Coffee breaks e almoços inclusos",
+    "4 horas de conteúdo exclusivo e especializado",
+    "Networking em ambiente sofisticado",
+    "Abordagem completa: Imagem + Etiqueta + Comunicação",
+    "Material didático e apoio especializado",
+    "Coffee break em galeria de arte",
     "Certificado de participação",
-    "Acesso ao grupo exclusivo pós-evento"
+    "Acesso ao grupo exclusivo pós-evento",
+    "Experiência imersiva na Vogue Gallery Brasil"
   ];
 
   return (
@@ -22,7 +23,7 @@ export default function Registration() {
             Garanta sua vaga!
           </h2>
           <p className="text-xl text-secondary-300 max-w-2xl mx-auto">
-            Transforme seu talento em um negócio de sucesso. Vagas limitadas!
+            Uma experiência única de desenvolvimento pessoal em um ambiente exclusivo. Vagas limitadas!
           </p>
         </div>
 
@@ -31,15 +32,15 @@ export default function Registration() {
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full mb-4">
                 <Star className="w-5 h-5" />
-                <span className="font-semibold">Oferta Especial</span>
+                <span className="font-semibold">Evento Exclusivo</span>
               </div>
               
               <div className="mb-6">
-                <span className="text-neutral-300 line-through text-2xl">R$ 897,00</span>
+                <span className="text-neutral-300 line-through text-2xl">R$ 497,00</span>
                 <div className="text-5xl md:text-6xl font-bold text-tertiary-500 mb-2">
-                  R$ 497,00
+                  R$ 297,00
                 </div>
-                <p className="text-neutral-500">ou 12x de R$ 49,70</p>
+                <p className="text-neutral-500">ou 3x de R$ 99,00 sem juros</p>
               </div>
             </div>
 
@@ -61,18 +62,35 @@ export default function Registration() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-secondary-300 to-primary-100 rounded-2xl p-6">
-                <h3 className="text-xl font-bold text-font mb-4">Detalhes do Evento:</h3>
-                <div className="space-y-3 text-font">
-                  <p><strong>Data:</strong> 05 e 06 de Agosto de 2025</p>
-                  <p><strong>Horário:</strong> 8h30 às 21h (Dia 1) | 9h30 às 19h (Dia 2)</p>
-                  <p><strong>Local:</strong> Casa de Festas - Espaço Pimenteira/RJ</p>
-                  <p><strong>Vagas:</strong> Limitadas a 50 participantes</p>
+              <div className="space-y-6">
+                <div className="bg-gradient-to-br from-secondary-300 to-primary-100 rounded-2xl p-6">
+                  <h3 className="text-xl font-bold text-font mb-4 flex items-center gap-2">
+                    <Clock className="w-5 h-5" />
+                    Detalhes do Evento
+                  </h3>
+                  <div className="space-y-3 text-font">
+                    <p><strong>Data:</strong> 21 de Agosto de 2025</p>
+                    <p><strong>Horário:</strong> 16h às 20h</p>
+                    <p><strong>Duração:</strong> 4 horas intensivas</p>
+                    <p><strong>Formato:</strong> Presencial e intimista</p>
+                  </div>
                 </div>
 
-                <div className="mt-6 p-4 bg-primary-300 rounded-lg">
+                <div className="bg-gradient-to-br from-tertiary-100 to-primary-300 rounded-2xl p-6">
+                  <h3 className="text-lg font-bold text-secondary-100 mb-3 flex items-center gap-2">
+                    <MapPin className="w-5 h-5" />
+                    Local Exclusivo
+                  </h3>
+                  <p className="text-secondary-100 text-sm mb-3">
+                    <strong>Vogue Gallery Brasil</strong><br />
+                    Shopping Vogue Square<br />
+                    Barra da Tijuca, Rio de Janeiro
+                  </p>
+                </div>
+
+                <div className="bg-primary-300 rounded-lg p-4">
                   <p className="text-sm text-font">
-                    <strong>⚡ Últimas vagas!</strong> Apenas 12 lugares disponíveis
+                    <strong>🎯 Vagas Limitadas!</strong> Formato intimista para máximo aproveitamento
                   </p>
                 </div>
               </div>
@@ -84,7 +102,7 @@ export default function Registration() {
               </button>
               
               <p className="text-sm text-neutral-500">
-                Pagamento 100% seguro • Garantia de 7 dias
+                Pagamento 100% seguro • Parcele em até 3x sem juros
               </p>
             </div>
           </div>

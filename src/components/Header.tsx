@@ -18,7 +18,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           <a href="#evento" className="text-font hover:text-primary-500 transition-colors">O Evento</a>
           <a href="#quem-somos" className="text-font hover:text-primary-500 transition-colors">Quem Somos</a>
           <a href="#publico" className="text-font hover:text-primary-500 transition-colors">Para Quem</a>
-          <a href="#agenda" className="text-font hover:text-primary-500 transition-colors">Agenda</a>
+          <a href="#local" className="text-font hover:text-primary-500 transition-colors">Local</a>
           <a href="#inscricoes" className="bg-primary-500 text-secondary-100 px-6 py-2 rounded-full hover:bg-primary-700 transition-colors">
             Inscrever-se
           </a>
@@ -39,7 +39,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
             <a href="#evento" className="text-font hover:text-primary-500 transition-colors">O Evento</a>
             <a href="#quem-somos" className="text-font hover:text-primary-500 transition-colors">Quem Somos</a>
             <a href="#publico" className="text-font hover:text-primary-500 transition-colors">Para Quem</a>
-            <a href="#agenda" className="text-font hover:text-primary-500 transition-colors">Agenda</a>
+            <a href="#local" className="text-font hover:text-primary-500 transition-colors">Local</a>
             <a href="#inscricoes" className="bg-primary-500 text-secondary-100 px-6 py-2 rounded-full hover:bg-primary-700 transition-colors text-center">
               Inscrever-se
             </a>

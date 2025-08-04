@@ -36,24 +36,37 @@ export default function Team() {
                 />
               </div>
               
-              {/* Name Bubbles */}
+              {/* Name and Role Bubbles */}
               <div className="absolute top-4 left-8 bg-background rounded-full px-4 py-2 shadow-lg">
-                <span className="font-semibold text-font">Chris</span>
+                <span className="font-semibold text-font text-sm">Consultora de Etiqueta</span>
               </div>
               <div className="absolute top-16 right-12 bg-background rounded-full px-4 py-2 shadow-lg">
-                <span className="font-semibold text-font">Wandréa</span>
+                <span className="font-semibold text-font text-sm">Consultora de Imagem</span>
               </div>
               <div className="absolute bottom-8 right-8 bg-background rounded-full px-4 py-2 shadow-lg">
-                <span className="font-semibold text-font">Joana</span>
+                <span className="font-semibold text-font text-sm">Consultora de RH</span>
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center space-y-6">
               <p className="text-lg md:text-xl text-font leading-relaxed">
-                Somos três empreendedoras apaixonadas por transformar sonhos em negócios de sucesso. 
-                Com anos de experiência em marketing, gestão e eventos, estamos aqui para compartilhar 
-                nosso conhecimento e te ajudar a se tornar uma verdadeira profissional da sua área.
+                Somos um projeto colaborativo que une três especialistas com um propósito em comum: 
+                <strong> valorizar e fortalecer a apresentação pessoal como ferramenta estratégica de qualificação profissional.</strong>
               </p>
+              
+              <p className="text-lg text-font leading-relaxed">
+                Formamos a Tríade da Apresentação Pessoal, reunindo expertises complementares que proporcionam 
+                uma abordagem completa e integrada sobre como nos apresentamos ao mundo – seja no comportamento, 
+                na imagem ou na postura profissional.
+              </p>
+              
+              <div className="bg-primary-100 rounded-2xl p-6">
+                <p className="text-font leading-relaxed">
+                  <strong>Acreditamos</strong> que a forma como nos comunicamos, nos vestimos e nos comportamos 
+                  impacta diretamente nossas oportunidades e trajetórias no mercado de trabalho. Por isso, 
+                  nosso projeto é voltado a pessoas que desejam se destacar com autenticidade, elegância e competência.
+                </p>
+              </div>
             </div>
           </div>
         </div>

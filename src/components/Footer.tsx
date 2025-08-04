@@ -49,7 +49,7 @@ export default function Footer() {
               <li><a href="#evento" className="hover:text-primary-500 transition-colors">O Evento</a></li>
               <li><a href="#quem-somos" className="hover:text-primary-500 transition-colors">Quem Somos</a></li>
               <li><a href="#publico" className="hover:text-primary-500 transition-colors">Para Quem</a></li>
-              <li><a href="#agenda" className="hover:text-primary-500 transition-colors">Agenda</a></li>
+              <li><a href="#local" className="hover:text-primary-500 transition-colors">Local</a></li>
               <li><a href="#inscricoes" className="hover:text-primary-500 transition-colors">Inscrições</a></li>
             </ul>
           </div>

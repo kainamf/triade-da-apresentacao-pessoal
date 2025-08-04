@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Team from './components/Team';
 import Target from './components/Target';
-import Schedule from './components/Schedule';
+import Venue from './components/Venue';
 import Registration from './components/Registration';
 import Footer from './components/Footer';
 
@@ -18,7 +18,7 @@ function App() {
       <About />
       <Team />
       <Target />
-      <Schedule />
+      <Venue />
       <Registration />
       <Footer />
     </div>
