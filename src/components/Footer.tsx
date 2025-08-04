@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-primary-500 mb-4">Tríade da Apresentação Pessoal</h3>
+            <h3 className="text-2xl font-bold text-neutral-700 mb-4">Tríade da Apresentação Pessoal</h3>
             <p className="text-secondary-300 mb-4">
               Transformando talentos em negócios de sucesso através do conhecimento, 
               networking e muito empoderamento.
