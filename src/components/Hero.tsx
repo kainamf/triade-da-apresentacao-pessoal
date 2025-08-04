@@ -1,46 +1,60 @@
-import { WHATSAPP_LINK } from '../constants';
+import React from 'react';
+import { Calendar, MapPin } from 'lucide-react';
 
-function Hero() {
+export default function Hero() {
     return (
-        <section id="inicio" className="pt-16 pb-20 bg-background">
-            <div className="container mx-auto px-4">
-                <div className="max-w-6xl mx-auto">
-                    {/* Imagem da Tríade no Topo */}
-                    <div className="text-center mb-16">
-                        <img
-                            src="/assets/images/membros.png"
-                            alt="Membros da Tríade da Apresentação Pessoal"
-                            className="w-full h-[350px] max-w-4xl mx-auto mb-8 object-contain"
+        <section className="min-h-screen bg-gradient-to-br from-primary-100 via-secondary-300 to-tertiary-100 relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-20">
+                <div className="grid grid-cols-8 h-full">
+                    {Array.from({ length: 64 }).map((_, i) => (
+                        <div
+                            key={i}
+                            className={`border border-secondary-100 ${i % 2 === 0 ? 'bg-primary-300/30' : 'bg-tertiary-300/30'
+                                }`}
                         />
+                    ))}
+                </div>
+            </div>
+
+            <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
+                <div className="text-center max-w-4xl mx-auto">
+                    {/* Main Title */}
+                    <div className="mb-8">
+
+
+                        <h1 className="text-4xl md:text-6xl font-script text-tertiary-500 mb-8">
+                            O Corpo Fala,
+                            a Imagem Confirma,
+                            a Voz Sustenta
+                        </h1>
                     </div>
 
-                    {/* Conteúdo Principal */}
-                    <div className="text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-                            Tríade da Apresentação Pessoal
-                        </h1>
-                        
-                        <div className="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
-                        
-                        <p className="text-xl md:text-2xl text-neutral-700 mb-12 leading-relaxed max-w-4xl mx-auto">
-                            Valorizamos e fortalecemos a apresentação pessoal como ferramenta estratégica de qualificação profissional através da harmonia entre etiqueta, imagem e comportamento.
-                        </p>
-                        
-                        <div>
-                            <a
-                                href={WHATSAPP_LINK}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-primary-700 hover:bg-primary-900 text-white px-10 py-5 text-lg font-semibold transition-all duration-300 border-2 border-primary-700 hover:border-primary-900"
-                            >
-                                Entre em Contato
-                            </a>
+                    {/* Event Details Card */}
+                    <div className="bg-background backdrop-blur-sm rounded-3xl p-8 shadow-xl max-w-md mx-auto mb-8">
+                        <div className="flex items-center justify-center mb-4">
+                            <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center">
+                                <Calendar className="w-6 h-6 text-secondary-100" />
+                            </div>
                         </div>
+
+                        <h3 className="text-2xl font-bold text-tertiary-500 mb-2">
+                            21 de Agosto de 2025
+                        </h3>
+                        <p className="text-lg text-tertiary-500 mb-2">
+                            Das 16h às 20h
+                        </p>
+                        <p className="text-lg text-tertiary-900">
+                            Vogue Gallery Brasil. Shopping Vogue Square Barra da Tijuca | RJ
+                        </p>
                     </div>
+
+                    {/* CTA Button */}
+                    <button className="bg-tertiary-500 text-secondary-100 px-8 py-4 rounded-full text-lg font-semibold hover:bg-tertiary-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        Garantir Minha Vaga
+                    </button>
                 </div>
             </div>
         </section>
     );
 }
-
-export default Hero;

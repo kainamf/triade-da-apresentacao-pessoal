@@ -1,50 +1,28 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Values from './components/Values';
-import BrunaSpecialist from './components/BrunaSpecialist';
-import RaquelSpecialist from './components/RaquelSpecialist';
-import LeandraSpecialist from './components/LeandraSpecialist';
-import Contact from './components/Contact';
+import Team from './components/Team';
+import Target from './components/Target';
+import Schedule from './components/Schedule';
+import Registration from './components/Registration';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
-import Loading from './components/Loading';
 
 function App() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    useEffect(() => {
-        // Simula o carregamento dos componentes e recursos
-        const loadResources = async () => {
-            // Aguarda um tempo mínimo para mostrar o loading
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // Aqui você pode adicionar outras verificações de carregamento se necessário
-            // Por exemplo: verificar se imagens foram carregadas, APIs responderam, etc.
-            
-            setIsLoading(false);
-        };
-
-        loadResources();
-    }, []);
-
-    if (isLoading) {
-        return <Loading />;
-    }
-
-    return (
-        <div className="min-h-screen bg-white">
-            <Hero />
-            <About />            
-            <BrunaSpecialist />
-            <RaquelSpecialist />
-            <LeandraSpecialist />
-            <Values />
-            <Contact />
-            <Footer />
-            <WhatsAppButton />
-        </div>
-    );
+  return (
+    <div className="min-h-screen">
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <Hero />
+      <About />
+      <Team />
+      <Target />
+      <Schedule />
+      <Registration />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

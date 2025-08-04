@@ -1,72 +1,46 @@
-import { BRUNA_INFO, RAQUEL_INFO, LEANDRA_INFO } from '../constants';
+import React from 'react';
 
-function About() {
-    return (
-        <section id="sobre" className="py-20 bg-background relative">
-            <div className="container mx-auto px-4">
-                {/* Título */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-neutral-900 mb-4">Quem Somos</h2>
-                    <div className="w-20 h-1 bg-primary-500 mx-auto mb-6"></div>
-                </div>
-                
-                {/* Conteúdo centralizado */}
-                <div className="max-w-4xl mx-auto text-center">
-                    <div className="space-y-6 text-neutral-700 text-lg leading-relaxed mb-12">
-                        <p className="text-justify">
-                            Somos um projeto colaborativo que une três especialistas com um propósito em comum: valorizar e fortalecer a apresentação pessoal como ferramenta estratégica de qualificação profissional.
-                        </p>
-                        <p className="text-justify">
-                            Formamos a Tríade da Apresentação Pessoal, composta por uma consultora de etiqueta, uma consultora de imagem e uma consultora de RH. Juntas, reunimos expertises complementares que proporcionam uma abordagem completa e integrada.
-                        </p>
-                        <p className="text-justify">
-                            Acreditamos que a forma como nos comunicamos, nos vestimos e nos comportamos impacta diretamente nossas oportunidades e trajetórias no mercado de trabalho.
-                        </p>
-                        <p className="text-justify">
-                            Nosso objetivo é oferecer conteúdo de valor, treinamentos e vivências práticas que contribuam para o desenvolvimento de uma imagem pessoal coerente, confiante e profissional.
-                        </p>
-                    </div>
+export default function About() {
+  return (
+    <section id="evento" className="py-20 bg-gradient-to-r from-primary-100 to-secondary-300 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="grid grid-cols-6 h-full">
+          {Array.from({ length: 48 }).map((_, i) => (
+            <div 
+              key={i} 
+              className={`border border-primary-300 ${
+                i % 3 === 0 ? 'bg-primary-300/40' : i % 3 === 1 ? 'bg-secondary-300/40' : 'bg-tertiary-300/40'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
 
-                    {/* Especialistas */}
-                    <div className="space-y-8">
-                        <h3 className="text-2xl font-bold text-neutral-900 mb-6">Nossas Especialistas</h3>
-                        
-                        <div className="grid md:grid-cols-3 gap-8">
-                            {/* Bruna */}
-                            <div className="border-l-4 border-primary-500 pl-6 text-left">
-                                <div className="flex items-center mb-3">
-                                    <h4 className="text-xl font-bold text-neutral-900">{BRUNA_INFO.name}</h4>
-                                </div>
-                                <p className="text-primary-700 font-semibold mb-2">{BRUNA_INFO.role}</p>
-                                <p className="text-neutral-700 mb-2">{BRUNA_INFO.specialty}</p>
-                                <p className="text-neutral-600 italic text-justify">"{BRUNA_INFO.description}"</p>
-                            </div>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl md:text-6xl font-script text-font mb-12">
+            O evento
+          </h2>
 
-                            {/* Raquel */}
-                            <div className="border-l-4 border-primary-500 pl-6 text-left">
-                                <div className="flex items-center mb-3">
-                                    <h4 className="text-xl font-bold text-neutral-900">{RAQUEL_INFO.name}</h4>
-                                </div>
-                                <p className="text-primary-700 font-semibold mb-2">{RAQUEL_INFO.role}</p>
-                                <p className="text-neutral-700 mb-2">{RAQUEL_INFO.specialty}</p>
-                                <p className="text-neutral-600 italic text-justify">"{RAQUEL_INFO.description}"</p>
-                            </div>
-
-                            {/* Leandra */}
-                            <div className="border-l-4 border-primary-500 pl-6 text-left">
-                                <div className="flex items-center mb-3">
-                                    <h4 className="text-xl font-bold text-neutral-900">{LEANDRA_INFO.name}</h4>
-                                </div>
-                                <p className="text-primary-700 font-semibold mb-2">{LEANDRA_INFO.role}</p>
-                                <p className="text-neutral-700 mb-2">{LEANDRA_INFO.specialty}</p>
-                                <p className="text-neutral-600 italic text-justify">"{LEANDRA_INFO.description}"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className="bg-background backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
+            <p className="text-xl md:text-2xl text-font leading-relaxed mb-8">
+              Um evento presencial pra transformar o seu talento em um negócio sólido.
+            </p>
+            
+            <div className="bg-secondary-300 rounded-2xl p-6 md:p-8">
+              <p className="text-lg md:text-xl text-font leading-relaxed">
+                A Tríade da Apresentação Pessoal vai aprimorar a sua essência criativa e te mostrar 
+                como unir marketing, atendimento e gestão para crescer de verdade.
+              </p>
             </div>
-        </section>
-    );
-}
 
-export default About;
+            <button className="mt-8 bg-tertiary-300 text-secondary-100 px-8 py-3 rounded-full text-lg font-semibold hover:bg-tertiary-500 transform hover:scale-105 transition-all duration-300 shadow-lg border-b-4 border-tertiary-700">
+              Comprar Agora
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
