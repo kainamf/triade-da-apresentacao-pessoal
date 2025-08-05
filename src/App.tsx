@@ -10,7 +10,7 @@ function App() {
     <div className="min-h-screen">
       <Hero />
       <About />
-      <Team />
+      {/* <Team /> */}
       <Target />
       <Footer />
     </div>

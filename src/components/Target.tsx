@@ -1,6 +1,3 @@
-import React from 'react';
-import { Heart, Users, Briefcase } from 'lucide-react';
-
 export default function Target() {
   const targetAudience = [
     {
@@ -21,21 +18,7 @@ export default function Target() {
   ];
 
   return (
-    <section id="publico" className="py-20 bg-secondary-100 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="grid grid-cols-6 h-full">
-          {Array.from({ length: 48 }).map((_, i) => (
-            <div 
-              key={i} 
-              className={`border border-primary-300 ${
-                i % 3 === 0 ? 'bg-primary-300/30' : i % 3 === 1 ? 'bg-secondary-300/30' : 'bg-tertiary-300/30'
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-
+    <section id="publico" className="py-20 bg-primary-100 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-script text-font mb-4">
@@ -46,18 +29,18 @@ export default function Target() {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6">
             {targetAudience.map((item, index) => (
               <div key={index} className="group hover:scale-105 transition-transform duration-300">
-                <div className="bg-primary-100 rounded-3xl p-6 h-full flex flex-col">
-                  <h3 className="text-lg font-semibold text-font mb-4 leading-tight">
+                <div className="bg-tertiary-100 border-2 border-secondary-500 rounded-3xl p-6 h-full flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <h3 className="text-lg font-semibold text-secondary-700 mb-4 leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-font leading-relaxed mb-6 flex-grow">
+                  <p className="text-secondary-700 leading-relaxed mb-6 flex-grow">
                     {item.description}
                   </p>
-                  <div className="bg-tertiary-500 text-neutral-500 px-4 py-2 rounded-full text-sm font-semibold text-center">
+                  <div className="bg-primary-300 text-secondary-700 px-4 py-2 rounded-full text-sm font-semibold text-center">
                     {item.benefit}
                   </div>
                 </div>
@@ -76,7 +59,7 @@ export default function Target() {
               Então este evento foi pensado especialmente para você! Junte-se a nós nesta 
               jornada de autoconhecimento e desenvolvimento pessoal.
             </p>
-            <button className="bg-tertiary-500 text-neutral-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-tertiary-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+            <button className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-secondary-500 transform hover:scale-105 transition-all duration-300 shadow-lg">
               Quero Participar
             </button>
           </div>
