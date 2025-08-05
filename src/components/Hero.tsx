@@ -32,8 +32,7 @@ export default function Hero() {
                             <img
                                 src="/assets/images/triade.jpeg"
                                 alt="Tríade da Apresentação Pessoal"
-                                className="w-full h-full object-cover"
-                                style={{ objectPosition: 'center 10%' }}
+                                className="w-full h-full object-cover object-top"
                             />
                         </div>
                     </div>
