@@ -34,19 +34,16 @@ export default function Venue() {
                                         </h4>
                                         
                                         {/* Date and Time */}
-                                        <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 bg-secondary-700 rounded-lg flex items-center justify-center">
-                                                <Calendar className="w-5 h-5 text-white" />
-                                            </div>
-                                            <div>
-                                                <div className="text-lg font-bold text-secondary-700">
-                                                    21 Agosto 2025
-                                                </div>
-                                                <div className="text-sm text-secondary-600">
-                                                    16h às 19h
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                            <div className="flex-1">
+                                <div className="text-base sm:text-lg font-bold text-secondary-700">
+                                    21 Agosto 2025
+                                </div>
+                                <div className="text-sm text-secondary-600">
+                                    16h às 19h
+                                </div>
+                            </div>
+                        </div>
                                     </div>
                                 </div>
 
