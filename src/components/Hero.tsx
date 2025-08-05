@@ -10,7 +10,7 @@ export default function Hero() {
                         {/* Logo */}
                         <div className="mb-6">
                             <img
-                                src="/assets/images/logo.png"
+                                src="/assets/images/logos/logo.png"
                                 alt="Tríade da Apresentação Pessoal"
                                 className="h-24 md:h-28 mb-8 mx-auto"
                             />

@@ -3,7 +3,7 @@ import { Calendar, MapPin } from 'lucide-react';
 
 export default function Venue() {
     return (
-        <section id="local" className="py-20 bg-primary-700 relative overflow-hidden">
+        <section id="local" className="py-20 bg-primary-900 relative overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-6xl mx-auto">
                     {/* Vogue Gallery Section */}
