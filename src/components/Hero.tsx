@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-background relative overflow-hidden">
+        <section className="min-h-screen bg-primary-100 relative overflow-hidden">
             <div className="container mx-auto px-4 py-12 md:pt-16 md:pb-24 relative z-10 max-w-6xl">
                 <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
                     {/* Left Column: Logo and Text */}
