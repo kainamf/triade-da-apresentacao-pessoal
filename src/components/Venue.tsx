@@ -73,7 +73,7 @@ export default function Venue() {
                                 <div>
                                     <div className="flex items-center gap-3 mb-4">
                                         <MapPin className="w-6 h-6 text-secondary-700" />
-                                        <h5 className="text-lg font-bold text-font">Shopping Vogue Square</h5>
+                                        <h5 className="text-lg font-bold text-font">Vogue Gallery Brasil</h5>
                                     </div>
                                     <div className="space-y-2 text-secondary-700 ml-9">
                                         <p className="font-semibold">Av. das Américas, 8585</p>

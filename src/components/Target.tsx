@@ -1,19 +1,21 @@
+import { EVENT_LINK } from '../constants';
+
 export default function Target() {
   const targetAudience = [
     {
       title: "Pessoas interessadas em autoconhecimento e fortalecimento pessoal",
-      description: "Você que busca se reconectar com sua essência e desenvolver uma imagem com intencionalidade",
-      benefit: "Descubra sua autenticidade e presença única"
+      description: "Você que busca desenvolver sua imagem com intencionalidade e se reconectar com sua essência autêntica",
+      benefit: "Descubra seu potencial único de influência"
     },
     {
-      title: "Profissionais que querem se comunicar estrategicamente",
-      description: "Homens e mulheres que desejam fortalecer sua presença e impacto em suas redes sociais e profissionais",
-      benefit: "Amplify seu networking e influência pessoal"
+      title: "Profissionais que querem comunicar-se estrategicamente",
+      description: "Homens e mulheres que desejam fortalecer sua apresentação pessoal através dos pilares da Comunicação, Imagem e Etiqueta",
+      benefit: "Construa sua presença com propósito"
     },
     {
-      title: "Pessoas que buscam desenvolvimento de imagem completo",
-      description: "Quem quer construir sua apresentação pessoal nos pilares da Comunicação, Imagem e Etiqueta",
-      benefit: "Transforme sua carreira e oportunidades"
+      title: "Pessoas com potencial de influência em suas redes",
+      description: "Público engajado que busca impactar positivamente seus círculos sociais e profissionais de forma autêntica",
+      benefit: "Amplifique seu impacto e networking"
     }
   ];
 
@@ -24,8 +26,8 @@ export default function Target() {
           <h2 className="text-5xl md:text-6xl font-script text-font mb-4">
             Este evento é para você que:
           </h2>
-          <p className="text-xl text-font max-w-3xl mx-auto">
-            Esperamos um público engajado, com grande potencial de influência em suas redes e círculos sociais
+          <p className="text-xl text-font max-w-4xl mx-auto">
+            Busca desenvolver sua apresentação pessoal de forma estratégica, construída nos pilares da <strong>Comunicação, Imagem e Etiqueta</strong>
           </p>
         </div>
 
@@ -40,9 +42,14 @@ export default function Target() {
                   <p className="text-secondary-700 leading-relaxed mb-6 flex-grow">
                     {item.description}
                   </p>
-                  <div className="bg-primary-300 text-secondary-700 px-4 py-2 rounded-full text-sm font-semibold text-center">
+                  <a 
+                    href={EVENT_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary-300 text-secondary-700 px-4 py-2 rounded-full text-sm font-semibold text-center hover:bg-primary-500 transition-colors duration-300 block"
+                  >
                     {item.benefit}
-                  </div>
+                  </a>
                 </div>
               </div>
             ))}
@@ -59,9 +66,14 @@ export default function Target() {
               Então este evento foi pensado especialmente para você! Junte-se a nós nesta 
               jornada de autoconhecimento e desenvolvimento pessoal.
             </p>
-            <button className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-secondary-500 transform hover:scale-105 transition-all duration-300 shadow-lg">
+            <a 
+              href={EVENT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-secondary-500 transform hover:scale-105 transition-all duration-300 shadow-lg inline-block"
+            >
               Quero Participar
-            </button>
+            </a>
           </div>
         </div>
       </div>

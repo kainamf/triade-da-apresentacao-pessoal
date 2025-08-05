@@ -1,3 +1,5 @@
+import { EVENT_LINK } from '../constants';
+
 export default function Hero() {
     return (
         <section className="min-h-screen bg-primary-100 relative overflow-hidden">
@@ -71,9 +73,14 @@ export default function Hero() {
 
                 {/* CTA Button */}
                 <div className="flex my-8 flex-col sm:flex-row gap-3 justify-center items-center">
-                    <button className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <a 
+                        href={EVENT_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg inline-block"
+                    >
                         Garantir Minha Vaga
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
