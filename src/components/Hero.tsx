@@ -1,6 +1,3 @@
-import React from 'react';
-import { Calendar, MapPin } from 'lucide-react';
-
 export default function Hero() {
     return (
         <section className="min-h-screen bg-background relative overflow-hidden">
@@ -69,30 +66,14 @@ export default function Hero() {
                             Esperamos por você para brindar à esse momento com elegância e propósito.
                         </p>
                     </div>
+
                 </div>
 
-                {/* Event Details Card */}
-                <div className="max-w-md mx-auto md:max-w-lg mt-8 md:mt-12">
-                    <div className="bg-primary-100 backdrop-blur-sm rounded-2xl p-6 shadow-lg mb-6">
-                        <div className="space-y-2 text-font text-center">
-                            <p className="text-base font-semibold">
-                                21 de agosto de 2025 • Das 16h às 20h
-                            </p>
-                            <div className="flex items-center justify-center gap-1 text-font">
-                                <MapPin className="w-4 h-4" />
-                                <span className="text-sm">
-                                    Vogue Gallery Brasil - Barra da Tijuca, RJ
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* CTA Button */}
-                    <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                        <button className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                            Garantir Minha Vaga
-                        </button>
-                    </div>
+                {/* CTA Button */}
+                <div className="flex my-8 flex-col sm:flex-row gap-3 justify-center items-center">
+                    <button className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        Garantir Minha Vaga
+                    </button>
                 </div>
             </div>
         </section>
