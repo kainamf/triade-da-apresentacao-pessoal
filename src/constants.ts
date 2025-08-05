@@ -1,11 +1,6 @@
 // Informações centralizadas para uso nos componentes
-export const PHONE = '';
-export const EMAIL = '';
-export const ADDRESS = '';
-export const WHATSAPP_LINK = '';
 export const INSTAGRAM_LINK = 'https://www.instagram.com/triadedaapresentacaopessoal';
-export const LINKEDIN_LINK = '';
-export const FACEBOOK_LINK = '';
+export const EVENT_LINK = 'https://www.uticket.com.br/event/01L8TUOAOJX9L4';
 
 // Informações das consultoras da Tríade
 export const BRUNA_INFO = {

@@ -4,6 +4,7 @@ import About from './components/About';
 import Target from './components/Target';
 import Footer from './components/Footer';
 import Venue from './components/Venue';
+import EventButton from './components/EventButton';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Venue />
       
       <Footer />
+      <EventButton />
     </div>
   );
 }
