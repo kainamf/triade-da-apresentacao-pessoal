@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Team() {
     return (
-        <section id="quem-somos" className="py-20 bg-gradient-to-br from-primary-100 via-secondary-300 to-tertiary-100 relative overflow-hidden">
+        <section id="quem-somos" className="py-20 bg-secondary-100 relative overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl md:text-6xl font-script text-font mb-8">

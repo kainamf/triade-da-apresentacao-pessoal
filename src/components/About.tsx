@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
     return (
-        <section id="evento" className="py-20 bg-gradient-to-r from-primary-100 to-secondary-300 relative overflow-hidden">
+        <section id="evento" className="py-20 bg-secondary-100 relative overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">

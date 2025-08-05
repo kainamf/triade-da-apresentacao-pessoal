@@ -3,52 +3,82 @@ import { Calendar, MapPin } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-gradient-to-br from-primary-100 via-secondary-300 to-tertiary-100 relative overflow-hidden">
-            <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
-                <div className="text-center max-w-5xl mx-auto">
-                    {/* Logo */}
-                    <div className="mb-12">
-                        <img 
-                            src="/assets/images/logo.png" 
-                            alt="Tríade da Apresentação Pessoal" 
-                            className="h-24 md:h-32 mx-auto mb-6"
-                        />
-                    </div>
+        <section className="min-h-screen bg-background relative overflow-hidden">
+            <div className="container mx-auto px-4 py-12 md:pt-16 md:pb-24 relative z-10 max-w-6xl">
+                <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
+                    {/* Left Column: Logo and Text */}
+                    <div className="order-1 md:order-1 text-center">
+                        {/* Logo */}
+                        <div className="mb-6">
+                            <img
+                                src="/assets/images/logo.png"
+                                alt="Tríade da Apresentação Pessoal"
+                                className="h-16 md:h-20 mb-8 mx-auto"
+                            />
+                        </div>
 
-                    {/* Main Title */}
-                    <div className="mb-12">
-                        <h1 className="text-4xl md:text-4xl font-bold text-font leading-tight mb-8">
-                            <span className="block text-primary-500">O Corpo Fala,</span>
-                            <span className="block text-primary-500">a Imagem Confirma,</span>
-                            <span className="block text-primary-500">a Voz Sustenta</span>
-                        </h1>
-                        
-                        <div className="text-2xl md:text-3xl font-semibold text-font mb-6">
-                            21 de agosto de 2025
-                        </div>
-                        
-                        <div className="text-xl md:text-2xl text-font mb-4">
-                            Onde imagem, presença e propósito se encontram
-                        </div>
-                        
-                        <div className="text-lg md:text-xl text-font italic font-medium">
-                            "Um evento exclusivo que conecta marcas, pessoas e propósito"
+                        {/* Main Title */}
+                        <div className="mb-6">
+                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-secondary-700 leading-tight">
+                                <span className="block mb-1">O Corpo Fala,</span>
+                                <span className="block mb-1">a Imagem Confirma,</span>
+                                <span className="block">a Voz Sustenta</span>
+                            </h1>
                         </div>
                     </div>
 
-                    {/* Event Details Card */}
-                    <div className="bg-background backdrop-blur-sm rounded-3xl p-8 shadow-xl max-w-lg mx-auto mb-8">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center">
-                                <Calendar className="w-6 h-6 text-secondary-100" />
-                            </div>
+                    {/* Right Column: Circular Image */}
+                    <div className="order-2 md:order-2 flex justify-center">
+                        <div className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg border-4 border-secondary-500">
+                            <img
+                                src="/assets/images/triade.jpeg"
+                                alt="Tríade da Apresentação Pessoal"
+                                className="w-full h-full object-cover"
+                                style={{ objectPosition: 'center 10%' }}
+                            />
                         </div>
+                    </div>
+                </div>
 
-                        <div className="space-y-2 text-font">
-                            <p className="text-lg font-semibold">
-                                Das 16h às 20h
+                {/* Centered Text Content */}
+                <div className="max-w-2xl mx-auto text-center mt-12 md:mt-16">
+                    {/* First Block */}
+                    <div className="space-y-3 mb-8">
+                        <p className="text-lg md:text-xl text-secondary-700">
+                            Uma imersão com a
+                        </p>
+                        <p className="text-xl md:text-2xl font-semibold text-secondary-700">
+                            Tríade da Apresentação Pessoal
+                        </p>
+                        <p className="text-lg md:text-xl text-secondary-700">
+                            para transformar presença em potência.
+                        </p>
+                    </div>
+                    {/* Second Block */}
+                    <div className="space-y-3 mb-8">
+                        <p className="text-lg md:text-xl text-secondary-700">
+                            Um encontro entre imagem, presença e propósito.
+                        </p>
+                        <p className="text-base md:text-lg font-semibold text-secondary-500">
+                            Palestras • Conexão • Experiência
+                        </p>
+                    </div>
+                    {/* Third Block */}
+                    <div className="space-y-3">
+                        <p className="text-lg md:text-xl text-secondary-700">
+                            Esperamos por você para brindar à esse momento com elegância e propósito.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Event Details Card */}
+                <div className="max-w-md mx-auto md:max-w-lg mt-8 md:mt-12">
+                    <div className="bg-primary-100 backdrop-blur-sm rounded-2xl p-6 shadow-lg mb-6">
+                        <div className="space-y-2 text-font text-center">
+                            <p className="text-base font-semibold">
+                                21 de agosto de 2025 • Das 16h às 20h
                             </p>
-                            <div className="flex items-center justify-center gap-2 text-font">
+                            <div className="flex items-center justify-center gap-1 text-font">
                                 <MapPin className="w-4 h-4" />
                                 <span className="text-sm">
                                     Vogue Gallery Brasil - Barra da Tijuca, RJ
@@ -58,12 +88,9 @@ export default function Hero() {
                     </div>
 
                     {/* CTA Button */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="bg-primary-500 text-tertiary-100 px-10 py-4 rounded-full text-xl font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-xl">
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                        <button className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
                             Garantir Minha Vaga
-                        </button>
-                        <button className="bg-tertiary-500 text-primary-500 px-10 py-4 rounded-full text-xl font-semibold hover:bg-tertiary-700 hover:text-primary-900 transition-all duration-300">
-                            Saiba Mais
                         </button>
                     </div>
                 </div>

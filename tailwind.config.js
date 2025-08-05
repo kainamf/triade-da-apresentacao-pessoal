@@ -5,18 +5,18 @@ export default {
     extend: {
       colors: {
         primary: {
-          100: '#ffffff',
+          100: '#f6ece2ff',
           300: '#f1e4d6',
           500: '#ebd2b8',
           700: '#dfc0a1',
           900: '#bf9d79',
         },
         secondary: {
-          100: '#4e507e',
-          300: '#2a2c5b',
-          500: '#1b1d46',
-          700: '#13142a',
-          900: '#000000',
+          100: '#7c8c9c',
+          300: '#4b6886',
+          500: '#385675',
+          700: '#314458',
+          900: '#1c2126',
         },
         tertiary: {
           100: '#ffffff',
@@ -33,7 +33,7 @@ export default {
           900: '#303030',
         },
         font: {
-          DEFAULT: '#303030',
+          default: '#303030',
         },
         background: '#fafafa',
       },

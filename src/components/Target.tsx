@@ -21,7 +21,7 @@ export default function Target() {
   ];
 
   return (
-    <section id="publico" className="py-20 bg-gradient-to-br from-primary-100 via-secondary-300 to-tertiary-100 relative overflow-hidden">
+    <section id="publico" className="py-20 bg-secondary-100 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="grid grid-cols-6 h-full">

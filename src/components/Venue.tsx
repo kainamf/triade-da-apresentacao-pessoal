@@ -3,7 +3,7 @@ import { MapPin, Clock, Users, Sparkles, Camera, Wine } from 'lucide-react';
 
 export default function Venue() {
     return (
-        <section id="local" className="py-20 bg-gradient-to-br from-tertiary-100 via-primary-100 to-secondary-300 relative overflow-hidden">
+        <section id="local" className="py-20 bg-secondary-100 relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
                 <div className="grid grid-cols-12 h-full">
