@@ -19,38 +19,45 @@ export default function Venue() {
                             {/* Left Column */}
                             <div className="space-y-8">
                                 {/* Logo + Info Section */}
-                                <div className="flex items-start gap-6">
-                                    {/* Larger Vogue Logo */}
-                                    <img
-                                        src="/assets/images/vogue-logo.jpeg"
-                                        alt="Vogue Gallery Brasil"
-                                        className="h-36 w-36 md:h-40 md:w-40 object-contain flex-shrink-0"
-                                    />
-                                    
+                                <div className="flex items-start justify-between gap-6">
                                     {/* Title and Date Info */}
-                                    <div className="space-y-4 flex-1">
+                                    <div className="space-y-4 flex-1 text-center">
                                         <h4 className="text-xl md:text-2xl font-bold text-font">
-                                            Vogue Gallery Brasil
+                                            Espaço Cultural Vogue Square
                                         </h4>
-                                        
+
                                         {/* Date and Time */}
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-                            <div className="flex-1">
-                                <div className="text-base sm:text-lg font-bold text-secondary-700">
-                                    21 Agosto 2025
-                                </div>
-                                <div className="text-sm text-secondary-600">
-                                    16h às 19h
-                                </div>
-                            </div>
-                        </div>
+                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3">
+                                            <div className="flex-1">
+                                                <div className="text-base sm:text-lg font-bold text-secondary-700">
+                                                    21 Agosto 2025
+                                                </div>
+                                                <div className="text-sm text-secondary-600">
+                                                    16h às 19h
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Apoio Section - Right Side */}
+                                    <div className="flex flex-col items-center gap-2">
+                                        <span className="text-sm font-semibold text-secondary-600">Apoio</span>
+                                        <div className="flex items-center gap-2">
+                                            <img
+                                                src="/assets/images/vogue-logo.jpeg"
+                                                alt="Vogue Square Gallery"
+                                                className="h-36 w-36 md:h-40 md:w-40 object-contain flex-shrink-0"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
+                                {/* Removed old Apoio Section */}
+
                                 {/* Description */}
                                 <p className="text-font leading-relaxed">
-                                    Um espaço contemporâneo e vibrante dentro do Vogue Square, com design moderno 
-                                    e atmosfera sofisticada. O ambiente ideal para um encontro que une propósito, 
+                                    Um espaço contemporâneo e vibrante dentro do Vogue Square, com design moderno
+                                    e atmosfera sofisticada. O ambiente ideal para um encontro que une propósito,
                                     presença e imagem com elegância.
                                 </p>
 
@@ -70,7 +77,7 @@ export default function Venue() {
                                 <div>
                                     <div className="flex items-center gap-3 mb-4">
                                         <MapPin className="w-6 h-6 text-secondary-700" />
-                                        <h5 className="text-lg font-bold text-font">Vogue Gallery Brasil</h5>
+                                        <h5 className="text-lg font-bold text-font">Vogue Square</h5>
                                     </div>
                                     <div className="space-y-2 text-secondary-700 ml-9">
                                         <p className="font-semibold">Av. das Américas, 8585</p>
