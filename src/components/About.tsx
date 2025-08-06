@@ -3,7 +3,7 @@ import { User, MessageSquare, Heart } from 'lucide-react';
 
 export default function About() {
     return (
-        <section id="evento" className="py-20 bg-primary-500 relative overflow-hidden">
+        <section id="evento" className="py-20 bg-primary-300 relative overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">

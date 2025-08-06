@@ -29,9 +29,9 @@ export const LEANDRA_INFO = {
     instagramUrl: 'https://www.instagram.com/letable.mesaposta',
     specialties: [
         'Consultora em Etiqueta à Mesa certificada pelo MEC- UFBr|IFC',
-        'Consultora parceira Socila- Etiqueta & Elegância',
+        'Consultora parceira Socila Forever | Etiqueta & Elegância',
         'Cerimonialista',
-        'CEO da Letable Mesa Posta',
+        'Fundadora da Le Table Mesa Posta',
         'Chef de Cozinha',
         'Formada em Marketing Estratégico',
         'Apaixonada por Organizar & Produzir Eventos'

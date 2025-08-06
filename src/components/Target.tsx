@@ -20,7 +20,7 @@ export default function Target() {
   ];
 
   return (
-    <section id="publico" className="py-20 bg-primary-700 relative overflow-hidden">
+    <section id="publico" className="py-20 bg-primary-500 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-script text-font mb-4">
