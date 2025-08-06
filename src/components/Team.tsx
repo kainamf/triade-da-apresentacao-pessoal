@@ -39,7 +39,9 @@ export default function Team() {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className="w-full h-full object-cover object-top"
+                          className={`w-full h-full object-cover object-top ${
+                            index === 0 ? 'scale-150' : 'scale-125'
+                          }`}
                         />
                       </div>
                     </div>
