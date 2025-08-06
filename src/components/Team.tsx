@@ -35,11 +35,11 @@ export default function Team() {
                     
                     {/* Photo */}
                     <div className="flex-shrink-0">
-                      <div className="w-28 h-36 overflow-hidden shadow-lg border-2 border-secondary-300 rounded-t-[200px]">
+                      <div className="w-28 h-28 overflow-hidden shadow-lg border-2 border-secondary-300 rounded-full">
                         <img
                           src={member.image}
                           alt={member.name}
-                          className="w-full h-full object-cover object-top rounded-t-[200px]"
+                          className="w-full h-full object-cover object-top"
                         />
                       </div>
                     </div>
