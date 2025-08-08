@@ -46,7 +46,7 @@ export default function Target() {
                     href={EVENT_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-primary-300 text-secondary-700 px-4 py-2 rounded-full text-sm font-semibold text-center hover:bg-primary-500 transition-colors duration-300 block"
+                    className="bg-secondary-300 text-white px-4 py-2 rounded-full text-sm font-semibold text-center hover:bg-primary-500 transition-colors duration-300 block"
                   >
                     {item.benefit}
                   </a>

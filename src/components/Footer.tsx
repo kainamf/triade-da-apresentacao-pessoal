@@ -2,7 +2,7 @@ import { INSTAGRAM_LINK } from '../constants';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-300 text-white py-4 relative z-[60]">
+    <footer className="bg-primary-700 text-white py-4 relative z-[60]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-white text-center">
           {/* Instagram Link */}
