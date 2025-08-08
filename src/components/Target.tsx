@@ -5,17 +5,17 @@ export default function Target() {
     {
       title: "Pessoas interessadas em autoconhecimento e fortalecimento pessoal",
       description: "Você que busca desenvolver sua imagem com intencionalidade e se reconectar com sua essência autêntica",
-      benefit: "Descubra seu potencial único de influência"
+      benefit: "Clique aqui e Descubra seu potencial único de influência"
     },
     {
       title: "Profissionais que querem comunicar-se estrategicamente",
       description: "Homens e mulheres que desejam fortalecer sua apresentação pessoal através dos pilares da Comunicação, Imagem e Etiqueta",
-      benefit: "Construa sua presença com propósito"
+      benefit: "Clique aqui e Construa sua presença com propósito"
     },
     {
       title: "Pessoas com potencial de influência em suas redes",
       description: "Público engajado que busca impactar positivamente seus círculos sociais e profissionais de forma autêntica",
-      benefit: "Amplifique seu impacto e networking"
+      benefit: "Clique aqui e Amplifique seu impacto e networking"
     }
   ];
 

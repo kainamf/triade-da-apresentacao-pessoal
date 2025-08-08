@@ -2,9 +2,9 @@ import { INSTAGRAM_LINK } from '../constants';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-300 text-primary-100 py-4 relative z-[60]">
+    <footer className="bg-secondary-300 text-white py-4 relative z-[60]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-primary-100 text-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-white text-center">
           {/* Instagram Link */}
           <a 
             href={INSTAGRAM_LINK} 
@@ -17,13 +17,13 @@ export default function Footer() {
           </a>
           
           {/* Separator */}
-          <span className="hidden sm:inline text-primary-100">|</span>
+          <span className="hidden sm:inline text-white">|</span>
           
           {/* Copyright */}
           <span className="text-center">&copy; 2025 Tríade da Apresentação Pessoal. Todos os direitos reservados.</span>
           
           {/* Separator */}
-          <span className="hidden sm:inline text-primary-100">|</span>
+          <span className="hidden sm:inline text-white">|</span>
           
           {/* Developer */}
           <a 
