@@ -5,17 +5,17 @@ export default function Target() {
     {
       title: "Pessoas interessadas em autoconhecimento e fortalecimento pessoal",
       description: "Você que busca desenvolver sua imagem com intencionalidade e se reconectar com sua essência autêntica",
-      benefit: "Clique aqui e Descubra seu potencial único de influência"
+      benefit: "Descubra seu potencial único de influência"
     },
     {
       title: "Profissionais que querem comunicar-se estrategicamente",
       description: "Homens e mulheres que desejam fortalecer sua apresentação pessoal através dos pilares da Comunicação, Imagem e Etiqueta",
-      benefit: "Clique aqui e Construa sua presença com propósito"
+      benefit: "Construa sua presença com propósito"
     },
     {
       title: "Pessoas com potencial de influência em suas redes",
       description: "Público engajado que busca impactar positivamente seus círculos sociais e profissionais de forma autêntica",
-      benefit: "Clique aqui e Amplifique seu impacto e networking"
+      benefit: "Amplifique seu impacto e networking"
     }
   ];
 
@@ -48,7 +48,10 @@ export default function Target() {
                     rel="noopener noreferrer"
                     className="bg-secondary-300 text-white px-4 py-2 rounded-full text-sm font-semibold text-center hover:bg-primary-500 transition-all duration-300 block shadow-xl hover:shadow-2xl"
                   >
-                    {item.benefit}
+                    <div className="flex flex-col">
+                      <span className="font-bold uppercase">CLIQUE AQUI</span>
+                      <span>{item.benefit}</span>
+                    </div>
                   </a>
                 </div>
               </div>
