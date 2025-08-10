@@ -75,7 +75,7 @@ export default function Target() {
               rel="noopener noreferrer"
               className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-secondary-500 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl inline-block"
             >
-              Quero Participar
+              QUERO PARTICIPAR
             </a>
           </div>
         </div>

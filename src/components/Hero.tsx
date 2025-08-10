@@ -78,7 +78,7 @@ export default function Hero() {
                         rel="noopener noreferrer"
                         className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg inline-block"
                     >
-                        Garantir Minha Vaga
+                        GARANTIR MINHA VAGA
                     </a>
                 </div>
             </div>

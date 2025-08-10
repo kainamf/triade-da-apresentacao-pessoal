@@ -13,7 +13,7 @@ function EventButton() {
                     <img src="/assets/icons/uticket.png" alt="Ticket" width={28} height={28} />
                 </span>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
-                    <span className="font-semibold text-sm sm:text-base">Compre Já!</span>
+                    <span className="font-semibold text-sm sm:text-base">COMPRE JÁ!</span>
                 </div>
             </a>
         </div>
